@@ -1,0 +1,1 @@
+// company_register script

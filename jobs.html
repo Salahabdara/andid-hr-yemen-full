@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوظائف - Andid HR Yemen</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>Andid HR Yemen</h1>
+                    <span>موقع الوظائف والمناقصات</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="jobs.html" class="active">الوظائف</a></li>
+                    <li><a href="tenders.html">المناقصات</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                    <li><a href="#" class="btn-register">تسجيل جديد</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>الوظائف المتاحة</h1>
+            <p>اكتشف الفرص الوظيفية المناسبة لك في اليمن</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-form">
+                <div class="search-row">
+                    <div class="search-field">
+                        <input type="text" id="job-search" placeholder="ابحث عن وظيفة...">
+                    </div>
+                    <div class="search-field">
+                        <select id="location-filter">
+                            <option value="">جميع المحافظات</option>
+                            <option value="sanaa">صنعاء</option>
+                            <option value="aden">عدن</option>
+                            <option value="taiz">تعز</option>
+                            <option value="hodeidah">الحديدة</option>
+                            <option value="ibb">إب</option>
+                            <option value="dhamar">ذمار</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <select id="category-filter">
+                            <option value="">جميع التخصصات</option>
+                            <option value="it">تقنية المعلومات</option>
+                            <option value="finance">المالية والمحاسبة</option>
+                            <option value="education">التعليم</option>
+                            <option value="healthcare">الصحة</option>
+                            <option value="engineering">الهندسة</option>
+                            <option value="marketing">التسويق</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <select id="type-filter">
+                            <option value="">نوع الوظيفة</option>
+                            <option value="full-time">دوام كامل</option>
+                            <option value="part-time">دوام جزئي</option>
+                            <option value="contract">عقد مؤقت</option>
+                            <option value="freelance">عمل حر</option>
+                        </select>
+                    </div>
+                    <button type="button" id="search-btn" class="btn-search">
+                        <i class="fas fa-search"></i> بحث
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Listing -->
+    <section class="jobs-listing">
+        <div class="container">
+            <div class="listing-header">
+                <div class="results-count">
+                    <span id="results-count">عرض 1-10 من أصل 125 وظيفة</span>
+                </div>
+                <div class="sort-options">
+                    <select id="sort-by">
+                        <option value="newest">الأحدث</option>
+                        <option value="oldest">الأقدم</option>
+                        <option value="salary-high">الراتب (الأعلى أولاً)</option>
+                        <option value="salary-low">الراتب (الأقل أولاً)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="jobs-container" id="jobs-container">
+                <!-- Job Card 1 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3>مطور ويب متقدم</h3>
+                        <span class="job-type">دوام كامل</span>
+                    </div>
+                    <div class="job-company">
+                        <i class="fas fa-building"></i>
+                        <span>شركة التقنية المتقدمة</span>
+                    </div>
+                    <div class="job-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>صنعاء</span>
+                    </div>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>200,000 - 300,000 ريال</span>
+                    </div>
+                    <div class="job-description">
+                        <p>نبحث عن مطور ويب متقدم للانضمام إلى فريقنا. المرشح المثالي يجب أن يكون لديه خبرة في HTML, CSS, JavaScript, وإطارات العمل الحديثة.</p>
+                    </div>
+                    <div class="job-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-date">منذ يومين</span>
+                        <a href="job-details.html?id=1" class="btn-apply">تقدم الآن</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3>محاسب مالي</h3>
+                        <span class="job-type">دوام كامل</span>
+                    </div>
+                    <div class="job-company">
+                        <i class="fas fa-building"></i>
+                        <span>مجموعة الشركات التجارية</span>
+                    </div>
+                    <div class="job-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>عدن</span>
+                    </div>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>150,000 - 250,000 ريال</span>
+                    </div>
+                    <div class="job-description">
+                        <p>مطلوب محاسب مالي ذو خبرة في إعداد القوائم المالية والتقارير المحاسبية. يفضل حملة شهادة CPA أو ما يعادلها.</p>
+                    </div>
+                    <div class="job-tags">
+                        <span class="tag">المحاسبة</span>
+                        <span class="tag">القوائم المالية</span>
+                        <span class="tag">Excel</span>
+                        <span class="tag">CPA</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-date">منذ 3 أيام</span>
+                        <a href="job-details.html?id=2" class="btn-apply">تقدم الآن</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3>مدرس لغة إنجليزية</h3>
+                        <span class="job-type">دوام جزئي</span>
+                    </div>
+                    <div class="job-company">
+                        <i class="fas fa-building"></i>
+                        <span>معهد اللغات الحديثة</span>
+                    </div>
+                    <div class="job-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>تعز</span>
+                    </div>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>100,000 - 150,000 ريال</span>
+                    </div>
+                    <div class="job-description">
+                        <p>نبحث عن مدرس لغة إنجليزية مؤهل لتدريس جميع المستويات. يجب أن يكون لديه شهادة TESOL أو TEFL.</p>
+                    </div>
+                    <div class="job-tags">
+                        <span class="tag">التدريس</span>
+                        <span class="tag">اللغة الإنجليزية</span>
+                        <span class="tag">TESOL</span>
+                        <span class="tag">TEFL</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-date">منذ أسبوع</span>
+                        <a href="job-details.html?id=3" class="btn-apply">تقدم الآن</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 4 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3>مهندس مدني</h3>
+                        <span class="job-type">دوام كامل</span>
+                    </div>
+                    <div class="job-company">
+                        <i class="fas fa-building"></i>
+                        <span>شركة الإنشاءات الحديثة</span>
+                    </div>
+                    <div class="job-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>الحديدة</span>
+                    </div>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>250,000 - 350,000 ريال</span>
+                    </div>
+                    <div class="job-description">
+                        <p>مطلوب مهندس مدني للإشراف على مشاريع البناء والتطوير. يجب أن يكون لديه خبرة لا تقل عن 5 سنوات.</p>
+                    </div>
+                    <div class="job-tags">
+                        <span class="tag">الهندسة المدنية</span>
+                        <span class="tag">الإشراف</span>
+                        <span class="tag">AutoCAD</span>
+                        <span class="tag">إدارة المشاريع</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-date">منذ 5 أيام</span>
+                        <a href="job-details.html?id=4" class="btn-apply">تقدم الآن</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 5 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3>أخصائي تسويق رقمي</h3>
+                        <span class="job-type">دوام كامل</span>
+                    </div>
+                    <div class="job-company">
+                        <i class="fas fa-building"></i>
+                        <span>وكالة الإبداع للتسويق</span>
+                    </div>
+                    <div class="job-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>صنعاء</span>
+                    </div>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>180,000 - 280,000 ريال</span>
+                    </div>
+                    <div class="job-description">
+                        <p>نبحث عن أخصائي تسويق رقمي لإدارة حملات التسويق عبر وسائل التواصل الاجتماعي والمنصات الرقمية.</p>
+                    </div>
+                    <div class="job-tags">
+                        <span class="tag">التسويق الرقمي</span>
+                        <span class="tag">وسائل التواصل</span>
+                        <span class="tag">Google Ads</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-date">منذ 4 أيام</span>
+                        <a href="job-details.html?id=5" class="btn-apply">تقدم الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled>السابق</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">التالي</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Andid HR Yemen</h3>
+                    <p>منصة شاملة للوظائف والمناقصات في اليمن</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="jobs.html">الوظائف</a></li>
+                        <li><a href="tenders.html">المناقصات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>للشركات</h4>
+                    <ul>
+                        <li><a href="employer.html">نشر وظيفة</a></li>
+                        <li><a href="employer.html">نشر مناقصة</a></li>
+                        <li><a href="pricing.html">الأسعار</a></li>
+                        <li><a href="support.html">الدعم الفني</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +967 1 234567</p>
+                        <p><i class="fas fa-envelope"></i> info@andidhr.ye</p>
+                        <p><i class="fas fa-map-marker-alt"></i> صنعاء، اليمن</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andid HR Yemen. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/filter_jobs.js"></script>
+    <script src="js/mobile_nav.js"></script>
+</body>
+</html>
+
